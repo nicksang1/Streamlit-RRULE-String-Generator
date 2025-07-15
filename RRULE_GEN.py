@@ -1,6 +1,6 @@
 from itertools import product
-import streamlit as st
-from dateutil.rrule import rrulestr
+import streamlit as st # type: ignore
+from dateutil.rrule import rrulestr # type: ignore
 import datetime
 
 
@@ -68,6 +68,7 @@ def build_rule(
 
 # Streamlit app
 st.title("Recurrence Rule Builder")
+st.text("it's a concept used in calendaring systems to define repeating events (like 'every Monday' or 'the 1st of every month'). It's most commonly used in the iCalendar (RFC 5545) format, and popular in libraries like Python's dateutil.rrule.")
 
 repeat_type_option = ["d", "w", "mday", "yday"]
 
